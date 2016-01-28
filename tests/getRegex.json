@@ -1,0 +1,33 @@
+{
+  "tests": [
+    {
+      "name": "getRegex",
+      "description": "Test getRegex",
+      "output": {
+        "default": "/^[0-9a-zA-Z]+/m"
+      },
+      "callStack": [
+        {
+          "method": "startOfLine",
+          "arguments": [],
+          "returnType": "sameInstance"
+        },
+        {
+          "method": "range",
+          "arguments": [0, 9, "a", "z", "A", "Z"],
+          "returnType": "sameInstance"
+        },
+        {
+          "method": "multiple",
+          "arguments": [""],
+          "returnType": "sameInstance"
+        },
+        {
+          "method": "getRegex",
+          "arguments": [],
+          "returnType": "string"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+    "name": "signpostmarv/verbal-expressions-tests",
+    "description": "Language-agnostic test definitions for VerbalExpressions implementations",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SignpostMarv",
+            "email": "me@signpostmarv.name"
+        }
+    ],
+    "keywords": [
+        "regular expressions",
+        "regex",
+        "verbal expressions",
+        "tests"
+    ],
+    "suggests": {
+        "verbalexpressions/php-verbal-expressions": "Composer install would suggest you're wanting to test the PHP implementation"
+    },
+    "require": {
+        "php": ">=5.3"
+    }
+}

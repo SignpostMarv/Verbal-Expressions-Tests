@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb/legacy",
+  "rules": {
+    "indent": [2, 4],
+    "max-len": [2, 79, 4],
+    "valid-jsdoc": [2, {
+      "prefer": {
+        "return": "return"
+      }
+    }],
+    "require-jsdoc": [2, {
+      "require": {
+        "FunctionDeclaration": true,
+        "MethodDefinition": true,
+        "ClassDeclaration": true
+      }
+    }]
+  }
+}
