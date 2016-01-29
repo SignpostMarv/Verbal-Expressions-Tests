@@ -1,0 +1,149 @@
+{
+  "patterns": [
+    {
+      "name": "buildUrlPattern",
+      "description": "Build URL Pattern",
+      "callStack": [
+        {
+          "method": "startOfLine",
+          "arguments": [],
+          "returnType": "sameInstance"
+        },
+        {
+          "method": "then",
+          "arguments": ["http"],
+          "returnType": "sameInstance"
+        },
+        {
+          "method": "maybe",
+          "arguments": ["s"],
+          "returnType": "sameInstance"
+        },
+        {
+          "method": "then",
+          "arguments": ["://"],
+          "returnType": "sameInstance"
+        },
+        {
+          "method": "maybe",
+          "arguments": ["www."],
+          "returnType": "sameInstance"
+        },
+        {
+          "method": "anythingBut",
+          "arguments": [" "],
+          "returnType": "sameInstance"
+        },
+        {
+          "method": "endOfLine",
+          "arguments": [],
+          "returnType": "sameInstance"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "test URLs",
+      "description": "Test URLs",
+      "output": {
+        "default": true
+      },
+      "pattern": "buildUrlPattern",
+      "callStack": [
+        {
+          "method": "test",
+          "arguments": [
+            "http://github.com"
+          ],
+          "returnType": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "test URLs",
+      "description": "Test URLs",
+      "output": {
+        "default": true
+      },
+      "pattern": "buildUrlPattern",
+      "callStack": [
+        {
+          "method": "test",
+          "arguments": [
+            "http://www.github.com"
+          ],
+          "returnType": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "test URLs",
+      "description": "Test URLs",
+      "output": {
+        "default": true
+      },
+      "pattern": "buildUrlPattern",
+      "callStack": [
+        {
+          "method": "test",
+          "arguments": [
+            "https://github.com"
+          ],
+          "returnType": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "test URLs",
+      "description": "Test URLs",
+      "output": {
+        "default": true
+      },
+      "pattern": "buildUrlPattern",
+      "callStack": [
+        {
+          "method": "test",
+          "arguments": [
+            "https://www.github.com"
+          ],
+          "returnType": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "test URLs",
+      "description": "Test URLs",
+      "output": {
+        "default": true
+      },
+      "pattern": "buildUrlPattern",
+      "callStack": [
+        {
+          "method": "test",
+          "arguments": [
+            "https://github.com/blog"
+          ],
+          "returnType": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "test URLs",
+      "description": "Test URLs",
+      "output": {
+        "default": true
+      },
+      "pattern": "buildUrlPattern",
+      "callStack": [
+        {
+          "method": "test",
+          "arguments": [
+            "https://foobar.github.com"
+          ],
+          "returnType": "boolean"
+        }
+      ]
+    }
+  ]
+}
