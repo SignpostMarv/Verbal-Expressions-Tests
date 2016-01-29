@@ -23,7 +23,7 @@ module.exports = function gruntConfig(grunt) {
         jsonschema: {
             tests: {
                 files: {
-                    'tests.schema.json': 'tests/*.json',
+                    'schema/tests.json': 'tests/*.json',
                 },
             },
         },
