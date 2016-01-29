@@ -144,6 +144,91 @@
           "returnType": "boolean"
         }
       ]
+    },
+    {
+      "name": "test URLs",
+      "description": "Test URLs",
+      "output": {
+        "default": false
+      },
+      "pattern": "buildUrlPattern",
+      "callStack": [
+        {
+          "method": "test",
+          "arguments": [
+            " http://github.com"
+          ],
+          "returnType": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "test URLs",
+      "description": "Test URLs",
+      "output": {
+        "default": false
+      },
+      "pattern": "buildUrlPattern",
+      "callStack": [
+        {
+          "method": "test",
+          "arguments": [
+            "foo"
+          ],
+          "returnType": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "test URLs",
+      "description": "Test URLs",
+      "output": {
+        "default": false
+      },
+      "pattern": "buildUrlPattern",
+      "callStack": [
+        {
+          "method": "test",
+          "arguments": [
+            "htps://github.com"
+          ],
+          "returnType": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "test URLs",
+      "description": "Test URLs",
+      "output": {
+        "default": false
+      },
+      "pattern": "buildUrlPattern",
+      "callStack": [
+        {
+          "method": "test",
+          "arguments": [
+            "http:/github.com"
+          ],
+          "returnType": "boolean"
+        }
+      ]
+    },
+    {
+      "name": "test URLs",
+      "description": "Test URLs",
+      "output": {
+        "default": false
+      },
+      "pattern": "buildUrlPattern",
+      "callStack": [
+        {
+          "method": "test",
+          "arguments": [
+            "https://github.com /blog"
+          ],
+          "returnType": "boolean"
+        }
+      ]
     }
   ]
 }
