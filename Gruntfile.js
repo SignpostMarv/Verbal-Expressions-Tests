@@ -21,6 +21,12 @@ module.exports = function gruntConfig(grunt) {
             ],
         },
         jsonschema: {
+            schema: {
+                files: [{
+                    expand: true,
+                    src: 'schema/*.json',
+                }],
+            },
             tests: {
                 files: {
                     'schema/tests.json': 'tests/*.json',
