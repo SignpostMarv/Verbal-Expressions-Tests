@@ -2,6 +2,56 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "id": "http://verbalexpressions.github.io/test-schema",
   "type": "object",
+  "definitions": {
+    "callStack": {
+      "id": "http://verbalexpressions.github.io/test-schema/tests/0/callStack",
+      "type": "array",
+      "items": {
+        "$ref": "http://verbalexpressions.github.io/test-schema/tests/0/callStack/1"
+      }
+    },
+    "callStackMethod": {
+      "id": "http://verbalexpressions.github.io/test-schema/tests/0/callStack/1",
+      "type": "object",
+      "properties": {
+        "method": {
+          "id": "http://verbalexpressions.github.io/test-schema/tests/0/callStack/1/method",
+          "type": "string"
+        },
+        "arguments": {
+          "id": "http://verbalexpressions.github.io/test-schema/tests/0/callStack/1/arguments",
+          "type": "array",
+          "items": {}
+        },
+        "returnType": {
+          "id": "http://verbalexpressions.github.io/test-schema/tests/0/callStack/1/returnType",
+          "type": "string"
+        }
+      }
+    },
+    "output": {
+      "id": "http://verbalexpressions.github.io/test-schema/tests/0/output",
+      "type": "object",
+      "oneOf": [
+        {
+          "properties": {
+            "default": {
+              "id": "http://verbalexpressions.github.io/test-schema/tests/0/output/default",
+              "type": "string"
+            }
+          }
+        },
+        {
+          "properties": {
+            "default": {
+              "id": "http://verbalexpressions.github.io/test-schema/tests/0/output/default",
+              "type": "boolean"
+            }
+          }
+        }
+      ]
+    }
+  },
   "properties": {
     "tests": {
       "id": "http://verbalexpressions.github.io/test-schema/tests",
@@ -19,37 +69,14 @@
             "type": "string"
           },
           "output": {
-            "id": "http://verbalexpressions.github.io/test-schema/tests/0/output",
-            "type": "object",
-            "properties": {
-              "default": {
-                "id": "http://verbalexpressions.github.io/test-schema/tests/0/output/default",
-                "type": "string"
-              }
-            }
+            "$ref": "http://verbalexpressions.github.io/test-schema/tests/0/output"
+          },
+          "pattern": {
+            "id": "http://verbalexpressions.github.io/test-schema/tests/0/pattern",
+            "type": "string"
           },
           "callStack": {
-            "id": "http://verbalexpressions.github.io/test-schema/tests/0/callStack",
-            "type": "array",
-            "items": {
-              "id": "http://verbalexpressions.github.io/test-schema/tests/0/callStack/1",
-              "type": "object",
-              "properties": {
-                "method": {
-                  "id": "http://verbalexpressions.github.io/test-schema/tests/0/callStack/1/method",
-                  "type": "string"
-                },
-                "arguments": {
-                  "id": "http://verbalexpressions.github.io/test-schema/tests/0/callStack/1/arguments",
-                  "type": "array",
-                  "items": {}
-                },
-                "returnType": {
-                  "id": "http://verbalexpressions.github.io/test-schema/tests/0/callStack/1/returnType",
-                  "type": "string"
-                }
-              }
-            }
+            "$ref": "http://verbalexpressions.github.io/test-schema/tests/0/callStack"
           }
         },
         "required": [
