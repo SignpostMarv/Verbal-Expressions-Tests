@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>verbal-expressions-tests</id>
+    <version>0.1.0</version>
+    <authors>SignpostMarv</authors>
+    <owners>SignpostMarv</owners>
+    <projectUrl>https://github.com/SignpostMarv/Verbal-Expressions-Tests</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Language-agnostic test definitions for VerbalExpressions implementations</description>
+    <releaseNotes>Packaging up for nuget</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>regex verbal expressions tests</tags>
+  </metadata>
+  <files>
+    <file src="tests\*.json" target="content"/>
+  </files>
+</package>
