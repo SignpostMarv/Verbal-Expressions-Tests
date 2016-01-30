@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>verbal-expressions-tests</id>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <authors>SignpostMarv</authors>
     <owners>SignpostMarv</owners>
     <projectUrl>https://github.com/SignpostMarv/Verbal-Expressions-Tests</projectUrl>
@@ -13,6 +13,6 @@
     <tags>regex verbal expressions tests</tags>
   </metadata>
   <files>
-    <file src="tests\*.json" target="content"/>
+    <file src="tests\*.json" target="content\tests"/>
   </files>
 </package>
