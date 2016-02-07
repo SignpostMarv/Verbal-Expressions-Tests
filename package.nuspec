@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>verbal-expressions-tests</id>
-    <version>0.1.1</version>
+    <version>0.1.3</version>
     <authors>SignpostMarv</authors>
     <owners>SignpostMarv</owners>
     <projectUrl>https://github.com/SignpostMarv/Verbal-Expressions-Tests</projectUrl>
@@ -11,6 +11,14 @@
     <releaseNotes>Packaging up for nuget</releaseNotes>
     <copyright>Copyright 2016</copyright>
     <tags>regex verbal expressions tests</tags>
+    <dependencies>
+      <group>
+        <dependency id="Newtonsoft.Json" version="8.0.2"/>
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="tests\*.json" copyToOutput="true"/>
+    </contentFiles>
   </metadata>
   <files>
     <file src="tests\*.json" target="content\tests"/>
