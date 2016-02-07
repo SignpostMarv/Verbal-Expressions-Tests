@@ -4,7 +4,8 @@
       "name": "getRegex",
       "description": "Test getRegex",
       "output": {
-        "default": "/^[0-9a-zA-Z]+/m"
+        "default": "/^[0-9a-zA-Z]+/m",
+        "javascript": "/^[0-9a-zA-Z](?:)*/gm"
       },
       "callStack": [
         {
