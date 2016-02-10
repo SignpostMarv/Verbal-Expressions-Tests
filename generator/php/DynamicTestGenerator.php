@@ -246,7 +246,7 @@ class DynamicTestGenerator
                     $methodName .= ++$methodIncrements[$methodName];
                 }
                 $methods[] = $methodName;
-                $method = $factory->method($methodName);
+                $method = $factory->method($methodName)->makePublic();
                 if (isset($test->pattern)) {
                     $method->addStmt(
                         new Assign(
