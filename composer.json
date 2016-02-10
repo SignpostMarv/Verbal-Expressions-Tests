@@ -8,9 +8,17 @@
             "email": "me@signpostmarv.name"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "SignpostMarv\\VerbalExpressionsTests\\Generator\\": "generator/php/"
+        }
+    },
     "bin": [
         "bin/verbal-expressions-tests-generator.php"
     ],
+    "config": {
+        "optimize-autoloader": true
+    },
     "keywords": [
         "regular expressions",
         "regex",

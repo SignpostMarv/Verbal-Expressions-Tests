@@ -8,10 +8,6 @@ namespace SignpostMarv\VerbalExpressionsTests\Generator;
 
 require_once(getcwd() . '/vendor/autoload.php');
 
-if (!class_exists(__NAMESPACE__ . '\\DynamicTestGenerator')) {
-    require_once(dirname(__DIR__) . '/generator/php/DynamicTestGenerator.php');
-}
-
 use RuntimeException;
 
 if (count($argv) < 2) {
